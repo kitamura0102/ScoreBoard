@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball scoreboard</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="home">
+      <h2 class="encabezado">home</h2>
+      <div class="screen" id="screen1">
+        <h2 class="score-number" id="score-number1">0</h2>
+      </div>
+      <button class="points-btn" id="score1-btn-1" onclick="pointsOne()">+ 1</button>
+      <button class="points-btn" id="score1-btn-2" onclick="pointsTwo()">+ 2</button>
+      <button class="points-btn" id="score1-btn-3" onclick="pointsThree">+ 3</button>
+    </div>
+    <div class="guest">
+      <h2 class="encabezado">guest</h2>
+      <div class="screen" id="screen2">
+        <h2 class="score-number" id="score-number2">0</h2>
+      </div>
+      <button class="points-btn" id="score2-btn-1" onclick="pointsOne()">+ 1</button>
+      <button class="points-btn" id="score2-btn-2" onclick="pointsTwo()">+ 2</button>
+      <button class="points-btn" id="score2-btn-3" onclick="pointsThree()">+ 3</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
