@@ -66,3 +66,18 @@ button{
 .points-btn:hover{
     color: #F94F6D;
 }
+.reset{
+    position: absolute;
+    bottom: 600px;
+    height: 50px;
+    width: 150px;
+    background-color: green;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.reset:hover{
+    background-color: white;
+    color: green;
+}

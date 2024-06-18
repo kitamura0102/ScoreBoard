@@ -1,20 +1,54 @@
-let scoreNumberOne = document.getElementById("score-number1");
-let scoreNumberTwo = document.getElementById("score-number2");
+let score1 = 0;
+let score2 = 0;
+let homeScore = (document.getElementById("home-score").textContent = score1);
 
-let btnOneOne = document.getElementById("score1-btn-1")
-let btnOneTwo = document.getElementById("score1-btn-2")
-let btnOneThree = document.getElementById("score1-btn-3")
+let guestScore = document.getElementById("guest-score").textContent = score2;
 
-let btnTwoOne = document.getElementById("score2-btn-1")
-let btnTwoTwo = document.getElementById("score2-btn-2")
-let btnTwoThree = document.getElementById("score2-btn-3")
-
-function pointsOne(){
+function getOnePoint() {
+    score1 += 1;
+    console.log(score1)
+    homeScore = document.getElementById("home-score").textContent = score1;
 
 }
-function pointsTwo(){
+
+
+function getTwoPoint() {
+    score1 +=2;
+    console.log(score1)
+    homeScore = document.getElementById("home-score").textContent = score1;
 
 }
-function pointsThree(){
+function getThreePoint() {
+    score1 +=3;
+    console.log(score1)
+    homeScore = document.getElementById("home-score").textContent = score1;
+
+}
+
+
+function pointsOne() {
+    score2 += 1;
+    console.log(score2)
+    guestScore = document.getElementById("guest-score").textContent = score2;
+}
+
+
+function pointsTwo() {
+    score2 +=2;
+    console.log(score2)
+    guestScore = document.getElementById("guest-score").textContent = score2;
+}
+function pointsThree() {
+    score2 +=3;
+    console.log(score2)
+    guestScore = document.getElementById("guest-score").textContent = score2;
+}
+
+function reset(){
+    score1 = 0;
+    score2 = 0;
+    homeScore = document.getElementById("home-score").textContent = score1;
+    guestScore = document.getElementById("guest-score").textContent = score2;
+
 
 }
